@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Insurance premium prediction</title>
+    </head>
+    <body style="background-color: lightblue;">
+        <h1> Insurance premium prediction </h1>
+        <br><br>
+        <form action= '/predict' method = "POST">
+            <fieldset>
+                <legend>Enter Age </legend>
+                <input type="number" name = "age" id = "age" required>
+            </fieldset><br>
+            <fieldset>
+                <legend>Enter BMI </legend>
+                <input type="number" name = "bmi" id = "bmi" required>
+            </fieldset><br>
+            <fieldset>
+                <legend>Enter Number of Children </legend>
+                <input type="number" name = "children" id = "children" required>
+            </fieldset><br>
+            <fieldset>
+                <legend> Sex </legend>
+                <select name="sex" id = "sex" required>
+                    <option value="male"> male </option>
+                    <option value="female"> female </option>
+                </select>
+            </fieldset><br>
+            <fieldset>
+                <legend> Smoker </legend>
+                <select name="smoker" id = "smoker" required>
+                    <option value="yes"> yes </option>
+                    <option value="no"> no </option>
+                </select>
+            </fieldset><br>
+            <fieldset>
+                <legend> Region </legend>
+                <select name="region" id = "region" required>
+                    <option value="northwest"> northwest </option>
+                    <option value="southeast"> southeast </option>
+                    <option value="southwest"> southwest </option>
+                    <option value="northeast"> northeast </option>
+                </select>
+            </fieldset><br><br>
+
+            <!--Crearting Submit button-->
+            <input type="submit" value="Submit">
+            
+        </form>
+        <br>
+        <h3>{{prediction_text}} </h3>
+        <br>
+
+        <p>@2020 Anupam Borah </p>
+
+    </body>
+
+</html>
