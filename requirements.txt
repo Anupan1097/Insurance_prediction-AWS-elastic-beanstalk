@@ -1,0 +1,16 @@
+certifi==2020.6.20
+click==7.1.2
+Flask==1.1.2
+gunicorn==20.0.4
+itsdangerous==1.1.0
+Jinja2==2.11.2
+joblib==0.17.0
+jupyter-core==4.6.3
+MarkupSafe==1.1.1
+numpy==1.19.4
+pandas==1.1.4
+scikit-learn==0.23.2
+scipy==1.5.4
+seaborn==0.11.0
+spyder==4.2.0
+Werkzeug==1.0.1
